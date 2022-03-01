@@ -7,14 +7,14 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class DBUserDetailsServiceImpl implements UserDetails {
+public class MyUserDetails implements UserDetails {
 
     private String userName;
-    public DBUserDetailsServiceImpl(String userName) {
+    public MyUserDetails(String userName) {
         this.userName=userName;
     }
 
-    public DBUserDetailsServiceImpl() {
+    public MyUserDetails() {
 
     }
 

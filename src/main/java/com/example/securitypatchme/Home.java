@@ -11,7 +11,9 @@ public class Home {
 
     @GetMapping("/")
     public String home(){
-        return ("<h1>welcome home</h1>");
+        return ("<h1>welcome home</h1>" +
+                "" +
+                "<p>this path isn't blocked by spring security</p>");
     }
 
     @GetMapping("/user")
